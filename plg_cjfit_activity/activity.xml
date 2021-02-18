@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension group="cjfit" method="upgrade" type="plugin" version="3.5">
+    <name>CjFit - Activity</name>
+	<creationDate>2018-Jan-14</creationDate>
+    <author>Maverick</author>
+    <authorEmail>support@corejoomla.com</authorEmail>
+    <authorUrl>http://www.corejoomla.com</authorUrl>
+	<copyright>All rights reserved by www.corejoomla.com 2009-12.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0.3</version>
+    <description>CjFit activity plugin to handle user activity events.</description>
+    <files>
+        <filename>activity.xml</filename>
+        <filename plugin="activity">activity.php</filename>
+        <filename>index.html</filename>
+    </files>
+	<languages folder="language/en-GB">
+        <language tag="en-GB">en-GB.plg_cjfit_activity.ini</language>
+    </languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="activity_stream">
+			    <field class="btn-group btn-group-yesno" default="1" description="PLG_CJFIT_ACTIVITY_STREAM_GOAL_STEPS_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_STEPS_LABEL" name="activity_goal_steps" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			    <field class="btn-group btn-group-yesno" default="1" description="PLG_CJFIT_ACTIVITY_STREAM_GOAL_DISTANCE_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_DISTANCE_LABEL" name="activity_goal_distance" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			    <field class="btn-group btn-group-yesno" default="1" description="PLG_CJFIT_ACTIVITY_STREAM_GOAL_CALORIES_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_CALORIES_LABEL" name="activity_goal_calories" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			    <field class="btn-group btn-group-yesno" default="1" description="PLG_CJFIT_ACTIVITY_STREAM_GOAL_ACTIVE_MINUTES_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_ACTIVE_MINUTES_LABEL" name="activity_goal_active_minutes" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+			<fieldset name="emails">
+			    <field class="btn-group btn-group-yesno" default="0" description="PLG_CJFIT_ACTIVITY_EMAIL_GOAL_STEPS_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_STEPS_LABEL" name="email_goal_steps" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			    <field class="btn-group btn-group-yesno" default="0" description="PLG_CJFIT_ACTIVITY_EMAIL_GOAL_STEPS_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_DISTANCE_LABEL" name="email_goal_distance" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			    <field class="btn-group btn-group-yesno" default="0" description="PLG_CJFIT_ACTIVITY_EMAIL_GOAL_CALORIES_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_CALORIES_LABEL" name="email_goal_calories" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			    <field class="btn-group btn-group-yesno" default="0" description="PLG_CJFIT_ACTIVITY_EMAIL_GOAL_ACTIVE_MINUTES_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_ACTIVE_MINUTES_LABEL" name="email_goal_active_minutes" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+			<fieldset name="points_system">
+			    <field class="btn-group btn-group-yesno" default="1" description="PLG_CJFIT_ACTIVITY_POINTS_GOAL_STEPS_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_STEPS_LABEL" name="points_goal_steps" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			    <field class="btn-group btn-group-yesno" default="1" description="PLG_CJFIT_ACTIVITY_POINTS_GOAL_DISTANCE_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_DISTANCE_LABEL" name="points_goal_distance" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			    <field class="btn-group btn-group-yesno" default="1" description="PLG_CJFIT_ACTIVITY_POINTS_GOAL_CALORIES_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_CALORIES_LABEL" name="points_goal_calories" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			    <field class="btn-group btn-group-yesno" default="1" description="PLG_CJFIT_ACTIVITY_POINTS_GOAL_ACTIVE_MINUTES_DESC" label="PLG_CJFIT_ACTIVITY_GOAL_ACTIVE_MINUTES_LABEL" name="points_goal_active_minutes" type="radio">
+			    	<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

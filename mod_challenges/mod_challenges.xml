@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension client="site" method="upgrade" type="module" version="3.6.0">
+	<name>CjFit Challenges List</name>
+	<author>Maverick</author>
+	<creationDate>2018-Jan-14</creationDate>
+	<copyright>All rights reserved by www.corejoomla.com 2009-11.</copyright>
+	<license>GPL 2.0</license>
+	<authorEmail>support@corejoomla.com</authorEmail>
+	<authorUrl>www.corejoomla.com</authorUrl>
+	<version>1.0.3</version>
+	<description>Shows list active challenges.</description>
+	<files>
+		<filename module="mod_challenges">mod_challenges.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field description="JFIELD_ALT_MODULE_LAYOUT_DESC" label="JFIELD_ALT_LAYOUT_LABEL" name="layout" type="modulelayout"/>
+				<field description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" name="moduleclass_sfx" type="text"/>
+				<field default="1" description="COM_MODULES_FIELD_CACHING_DESC" label="COM_MODULES_FIELD_CACHING_LABEL" name="cache" type="list"> 
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field default="900" description="COM_MODULES_FIELD_CACHE_TIME_DESC" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" name="cache_time" type="text"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

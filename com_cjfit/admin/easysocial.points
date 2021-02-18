@@ -1,0 +1,47 @@
+[
+    {
+        "title"         : "Steps Goal",
+        "alias"         : "steps-goal",
+        "description"   : "Points awarded for reaching steps goal.",
+        "command"       : "com_cjfit.steps_goal",
+        "extension"     : "com_cjfit",
+        "state"         : true,
+        "points"        : 1
+	},
+	{
+        "title"         : "Distance Goal",
+        "alias"         : "distance-goal",
+        "description"   : "Points awarded for reaching distance goal.",
+        "command"       : "com_cjfit.distance_goal",
+        "extension"     : "com_cjfit",
+        "state"         : true,
+        "points"        : 1
+	},
+	{
+        "title"         : "Calories Goal",
+        "alias"         : "calories-goal",
+        "description"   : "Points awarded for reaching calories goal.",
+        "command"       : "com_cjfit.calories_goal",
+        "extension"     : "com_cjfit",
+        "state"         : true,
+        "points"        : 1
+	},
+	{
+        "title"         : "Active Minutes Goal",
+        "alias"         : "active-minutes-goal",
+        "description"   : "Points awarded for reaching active minutes goal.",
+        "command"       : "com_cjfit.active_minutes_goal",
+        "extension"     : "com_cjfit",
+        "state"         : true,
+        "points"        : 1
+	},
+	{
+        "title"         : "Challenge",
+        "alias"         : "challenge",
+        "description"   : "Points awarded for winning the challenge.",
+        "command"       : "com_cjfit.challenge",
+        "extension"     : "com_cjfit",
+        "state"         : true,
+        "points"        : 1
+	}
+]

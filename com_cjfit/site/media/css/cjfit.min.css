@@ -1,0 +1,24 @@
+#cj-wrapper .steps-guage-footer .footer-heading {font-weight: bolder; font-size: 1.3em;}
+#cj-wrapper .summary-stats .stat-label {font-size: 0.9em;}
+#cj-wrapper .summary-stats .stats-num {font-weight: bold; font-size: 1.1em;}
+#cj-wrapper .activity-date {font-weight: bolder; font-size: 1.5em;}
+#cj-wrapper .summary-page-navigation {margin-top: 20px;}
+#cj-wrapper .summary-page-navigation a {margin-right: 10px;}
+#cj-wrapper .dashboard-item-title {font-weight: bold; font-size: 1.2em;}
+
+#rules-builder select, #rules-builder input {width: auto;}
+#rules-builder .active{background-color: #286090; border-color: #204d74;}
+
+#cj-wrapper .margin-right-10 {margin-right: 10px !important;}
+#cj-wrapper .margin-right-20 {margin-right: 20px !important;}
+#cj-wrapper .margin-bottom-5 {margin-bottom: 5px !important;}
+#cj-wrapper .margin-bottom-20 {margin-bottom: 20px !important;}
+#cj-wrapper .no-margin-top {margin-top: 0 !important;}
+#cj-wrapper .no-margin-bottom {margin-bottom: 0 !important;}
+#cj-wrapper .no-pad-top {padding-top: 0 !important;}
+#cj-wrapper .no-pad-bottom {padding-bottom: 0 !important;}
+#cj-wrapper .no-space-top {margin-top: 0 !important; padding-top: 0 !important;}
+#cj-wrapper .no-space-bottom {margin-bottom: 0 !important; padding-bottom: 0 !important;}
+
+#cj-wrapper .leaderboard-rank-num {padding-right: 10px; margin-right: 0; margin-top: 5px;}
+#cj-wrapper .leaderboard-avatar {padding-right: 10px; margin-right: 0;}

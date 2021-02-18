@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<extension method="upgrade" type="package" version="3.6">
+	<name>CjFit Package</name>
+	<author>Maverick</author>
+	<creationDate>2018-Jan-14</creationDate>
+	<packagename>cjfit</packagename>
+	<version>1.0.3</version>
+	<url>http://www.corejoomla.com/</url>
+	<packager>Maverick</packager>
+	<packagerurl>http://www.corejoomla.com/</packagerurl>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description/>
+	
+	<scriptfile>pkg_script.php</scriptfile>
+	
+	<files folder="packages">
+		<file id="cjfit" type="component">com_cjfit.zip</file>
+		<file client="site" id="cjfit" type="module">mod_challenges.zip</file>
+		<file client="site" id="cjfit" type="module">mod_cjfitleaderboard.zip</file>
+		<file client="site" id="cjfit" type="module">mod_stepsummary.zip</file>
+		<file client="site" id="cjfit" type="module">mod_stepslist.zip</file>
+		<file client="site" group="cjfit" id="cjfit" type="plugin">plg_cjfit_activity.zip</file>
+	</files>
+	
+	<updateservers>
+		<server name="CjFit Update Site" priority="1" type="collection">https://www.corejoomla.com/media/autoupdates/cjfit/package.xml</server>
+	</updateservers>
+</extension>

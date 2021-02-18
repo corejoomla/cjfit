@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cjforum>
+	<points_rule>
+		<name>com_cjfit.steps_goal</name>
+		<appname>com_cjfit</appname>
+		<title>Steps Goal</title>
+		<description>Points awarded to reaching the steps goal.</description>
+		<points>0</points>
+		<state>1</state>
+		<auto_approve>1</auto_approve>
+		<access>1</access>
+	</points_rule>
+	<points_rule>
+		<name>com_cjfit.distance_goal</name>
+		<appname>com_cjfit</appname>
+		<title>Distance Goal</title>
+		<description>Points awarded to reaching the distance goal.</description>
+		<points>0</points>
+		<state>1</state>
+		<auto_approve>1</auto_approve>
+		<access>1</access>
+	</points_rule>
+	<points_rule>
+		<name>com_cjfit.calories_goal</name>
+		<appname>com_cjfit</appname>
+		<title>Calories Goal</title>
+		<description>Points awarded to reaching the calories goal.</description>
+		<points>0</points>
+		<state>1</state>
+		<auto_approve>1</auto_approve>
+		<access>1</access>
+	</points_rule>
+	<points_rule>
+		<name>com_cjfit.active_minutes_goal</name>
+		<appname>com_cjfit</appname>
+		<title>Active Minutes Goal</title>
+		<description>Points awarded to reaching the active minutes goal.</description>
+		<points>0</points>
+		<state>1</state>
+		<auto_approve>1</auto_approve>
+		<access>1</access>
+	</points_rule>
+	<points_rule>
+		<name>com_cjfit.challenge</name>
+		<appname>com_cjfit</appname>
+		<title>Challenge</title>
+		<description>Points awarded for winning the challenge.</description>
+		<points>0</points>
+		<state>1</state>
+		<auto_approve>1</auto_approve>
+		<access>1</access>
+	</points_rule>
+	
+	<activity_type>
+		<name>com_cjfit.steps_goal</name>
+		<appname>com_cjfit</appname>
+		<title>Steps Goal</title>
+		<description>Reached the daily steps goal.</description>
+		<state>1</state>
+		<access>1</access>
+		<language>*</language>
+	</activity_type>
+	<activity_type>
+		<name>com_cjfit.distance_goal</name>
+		<appname>com_cjfit</appname>
+		<title>Distance Goal</title>
+		<description>Reached the daily distance goal.</description>
+		<state>1</state>
+		<access>1</access>
+		<language>*</language>
+	</activity_type>
+	<activity_type>
+		<name>com_cjfit.calories_goal</name>
+		<appname>com_cjfit</appname>
+		<title>Calories Goal</title>
+		<description>Reached the daily calories goal.</description>
+		<state>1</state>
+		<access>1</access>
+		<language>*</language>
+	</activity_type>
+	<activity_type>
+		<name>com_cjfit.active_minutes_goal</name>
+		<appname>com_cjfit</appname>
+		<title>Active Minutes Goal</title>
+		<description>Reached the daily active minutes goal.</description>
+		<state>1</state>
+		<access>1</access>
+		<language>*</language>
+	</activity_type>
+	<activity_type>
+		<name>com_cjfit.challenge</name>
+		<appname>com_cjfit</appname>
+		<title>Challenge</title>
+		<description>Won the challenge.</description>
+		<state>1</state>
+		<access>1</access>
+		<language>*</language>
+	</activity_type>
+</cjforum>

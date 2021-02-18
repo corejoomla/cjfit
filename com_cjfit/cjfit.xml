@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension method="upgrade" type="component" version="3.2">
+	<name>CjFit</name>
+	<author>Maverick</author>
+	<creationDate>2018-Jan-14</creationDate>
+	<copyright>(C) 2009 - 2017 corejoomla.com. All rights reserved.	</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.corejoomla.com</authorUrl>
+	<version>1.0.3</version>
+	<description>COM_CJFIT_XML_DESCRIPTION</description>
+
+	<files folder="site">
+		<filename>cjfit.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>jomsocial_rule.xml</filename>
+		<filename>altauserpoints_rule.xml</filename>
+		<filename>alphauserpoints_rule.xml</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>layouts</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	<media destination="com_cjfit" folder="site/media">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_cjfit.ini</language>
+	</languages>
+	<administration>
+	    <menu img="../components/com_cjfit/assets/images/cjfit.png" view="dashboard">COM_CJFIT_MENU</menu>
+		<submenu>
+			<menu link="option=com_cjfit&amp;view=dashboard" view="dashboard">COM_CJFIT_MENU_DASHBOARD</menu>
+			<menu link="option=com_cjfit&amp;view=users" view="users">COM_CJFIT_MENU_USERS</menu>
+			<menu link="option=com_cjfit&amp;view=challenges" view="challenges">COM_CJFIT_MENU_CHALLENGES</menu>
+			<menu link="option=com_cjfit&amp;view=emails" view="emails">COM_CJFIT_MENU_EMAIL_TEMPLATES</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>cjfit.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>cjforum_rules.xml</filename>
+			<filename>easysocial.points</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>sql</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_cjfit.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_cjfit.sys.ini</language>
+		</languages>
+	</administration>
+	<scriptfile>script.php</scriptfile>
+</extension>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jomsocial> 
+    <component>com_cjfit</component>
+    <rules>
+        <rule>
+            <name>CjFit - Steps Goal</name>
+            <description>Points awarded for reaching steps goal.</description>
+            <action_string>com_cjfit.steps_goal</action_string>
+            <publish>true</publish>
+            <points>0</points>
+            <access_level>1</access_level>
+        </rule>
+        <rule>
+            <name>CjFit - Distance Goal</name>
+            <description>Points awarded for reaching distance goal.</description>
+            <action_string>com_cjfit.distance_goal</action_string>
+            <publish>true</publish>
+            <points>0</points>
+            <access_level>1</access_level>
+        </rule>
+        <rule>
+            <name>CjFit - Calories Goal</name>
+            <description>Points awarded for reaching calories goal.</description>
+            <action_string>com_cjfit.calories_goal</action_string>
+            <publish>true</publish>
+            <points>0</points>
+            <access_level>1</access_level>
+        </rule>
+        <rule>
+            <name>CjFit - Active Minutes Goal</name>
+            <description>Points awarded for reaching active minutes goal.</description>
+            <action_string>com_cjfit.active_minutes_goal</action_string>
+            <publish>true</publish>
+            <points>0</points>
+            <access_level>1</access_level>
+        </rule>
+        <rule>
+            <name>CjFit - Challenge</name>
+            <description>Points awarded for winning the challenge.</description>
+            <action_string>com_cjfit.challenge</action_string>
+            <publish>true</publish>
+            <points>0</points>
+            <access_level>1</access_level>
+        </rule>
+    </rules>
+</jomsocial>

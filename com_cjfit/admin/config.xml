@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="challenges" label="COM_CJFIT_CHALLENGES_LABEL">
+		<field name="award_points" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_CJFIT_FIELD_AWARD_POINTS_LABEL" description="COM_CJFIT_FIELD_AWARD_POINTS_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="stream_activity" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_CJFIT_FIELD_STREAM_ACTIVITY_LABEL" description="COM_CJFIT_FIELD_STREAM_ACTIVITY_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="send_notification" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_CJFIT_FIELD_SEND_NOTIFICATION_LABEL" description="COM_CJFIT_FIELD_SEND_NOTIFICATION_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+
+	<fieldset name="shared" label="COM_CJFIT_SHARED_LABEL" description="COM_CJFIT_SHARED_DESC" addfieldpath="/administrator/components/com_content/models/fields">
+		<field name="client_id" type="text" default="" label="COM_CJFIT_FIELD_CLIENT_ID_LABEL" description="COM_CJFIT_FIELD_CLIENT_ID_DESC" />
+		<field name="client_secret" type="password" default="" label="COM_CJFIT_FIELD_CLIENT_SECRET_LABEL" description="COM_CJFIT_FIELD_CLIENT_SECRET_DESC" />
+		<field name="subscriber_verification_code" type="password" default="" label="COM_CJFIT_FIELD_SUBSCRIBER_VERIFICATION_CODE_LABEL" description="COM_CJFIT_FIELD_SUBSCRIBER_VERIFICATION_CODE_DESC" />
+		<field name="cron_secret" type="text" default="changeme" filter="cmd" label="COM_CJFIT_FIELD_CRON_SECRET_LABEL" description="COM_CJFIT_FIELD_CRON_SECRET_DESC" />
+		<field name="distance_unit" type="list" class="btn-group" default="km" label="COM_CJFIT_FIELD_DISTANCE_MEASUREMENT_LABEL" description="COM_CJFIT_FIELD_DISTANCE_MEASUREMENT_DESC">
+			<option value="mi">COM_CJFIT_UNIT_MILES</option>
+			<option value="km">COM_CJFIT_UNIT_KILOMETRE</option>
+			<option value="ft">COM_CJFIT_UNIT_FEET</option>
+			<option value="m">COM_CJFIT_UNIT_METRES</option>
+		</field>
+		<field name="elevation_unit" type="list" class="btn-group" default="m" label="COM_CJFIT_FIELD_ELEVATION_MEASUREMENT_LABEL" description="COM_CJFIT_FIELD_ELEVATION_MEASUREMENT_DESC">
+			<option value="ft">COM_CJFIT_UNIT_FEET</option>
+			<option value="m">COM_CJFIT_UNIT_METRES</option>
+		</field>
+		<field name="leaderboard_num_rows" type="text" default="10" label="COM_CJFIT_FIELD_LEADERBOARD_LIMIT_LABEL" description="COM_CJFIT_FIELD_LEADERBOARD_LIMIT_DESC" />
+		<field name="debug" type="radio" class="btn-group btn-group-yesno" default="0"
+			label="COM_CJFIT_FIELD_DEBUG_LABEL" description="COM_CJFIT_FIELD_DEBUG_DESC" filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="date_format" type="text" default="Y-m-d" label="COM_CJFIT_FIELD_DATE_FORMAT_LABEL" description="COM_CJFIT_FIELD_DATE_FORMAT_LABEL" />
+		
+		<field name="disonnected_profile_text" type="modal_article" required="false" edit="true" clear="true" 
+			label="COM_CJFIT_FIELD_DISCONNECTED_PROFILE_TEXT_LABEL" description="COM_CJFIT_FIELD_DISCONNECTED_PROFILE_TEXT_DESC"/>
+	</fieldset>
+
+	<fieldset name="integration" label="JGLOBAL_INTEGRATION_LABEL" description="COM_CJFIT_CONFIG_INTEGRATION_SETTINGS_DESC">
+		<field name="load_bootstrap_css" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_CJFIT_FIELD_LOAD_BOOTSTRAP_LABEL" description="COM_CJFIT_FIELD_LOAD_BOOTSTRAP_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	    <field name="ui_layout" default="default" type="list" filter="cmd" label="COM_CJFIT_FIELD_DEFAULT_LAYOUT_LABEL" description="COM_CJFIT_FIELD_DEFAULT_LAYOUT_DESC">
+	        <option value="default">Default</option>
+	        <option value="bootstrap3">Bootstrap 3</option>
+	    </field>
+	    <field name="theme" type="list" default="default" label="COM_CJFIT_FIELD_THEME_LABEL" description="COM_CJFIT_FIELD_THEME_DESC">
+			<option value="default">Default</option>
+			<option value="primary">Primary</option>
+			<option value="success">Success</option>
+			<option value="info">Info</option>
+			<option value="warning">Warning</option>
+			<option value="danger">Danger</option>
+		</field>
+		
+		<field name="sef_advanced" type="radio" class="btn-group btn-group-yesno btn-group-reversed" default="0"
+			label="JGLOBAL_SEF_ADVANCED_LABEL" description="JGLOBAL_SEF_ADVANCED_DESC" filter="integer">
+			<option value="0">JGLOBAL_SEF_ADVANCED_LEGACY</option>
+			<option value="1">JGLOBAL_SEF_ADVANCED_MODERN</option>
+		</field>
+
+		<field name="sef_ids" type="radio" class="btn-group btn-group-yesno" default="0"
+			label="JGLOBAL_SEF_NOIDS_LABEL" description="JGLOBAL_SEF_NOIDS_DESC" showon="sef_advanced:1" filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+	    <field name="avatar_size" type="list" default="96" label="COM_CJFIT_FIELD_AVATAR_SIZE_LABEL" description="COM_CJFIT_FIELD_AVATAR_SIZE_DESC">
+		    <option value="16">COM_CJFIT_SIZE_EXTRA_SMALL</option>
+		    <option value="32">COM_CJFIT_SIZE_SMALL</option>
+		    <option value="40">COM_CJFIT_SIZE_FIT</option>
+		    <option value="48">COM_CJFIT_SIZE_MEDIUM</option>
+		    <option value="64">COM_CJFIT_SIZE_BIG</option>
+		    <option value="96">COM_CJFIT_SIZE_LARGE</option>
+		    <option value="128">COM_CJFIT_SIZE_EXTRA_LARGE</option>
+		</field>
+	    
+		<field name="profile_component" type="list" class="btn-group" default="cjforum" label="COM_CJFIT_FIELD_PROFILE_COMPONENT_LABEL" description="COM_CJFIT_FIELD_PROFILE_COMPONENT_DESC">
+			<option value="none">None</option>
+			<option value="cjforum">CjForum</option>
+			<option value="cjblog">CjBlog</option>
+			<option value="jomsocial">JomSocial</option>
+			<option value="easysocial">EasySocial</option>
+			<option value="easyprofile">EasyProfile</option>
+			<option value="cb">Community Builder</option>
+			<option value="kunena">Kunena</option>
+			<option value="aup">Alpha User Points</option>
+			<option value="atup">Alta User Points</option>
+			<option value="gravatar">Gravatar</option>
+		</field>
+		<field name="avatar_component" type="list" class="btn-group" default="cjforum" label="COM_CJFIT_FIELD_AVATAR_COMPONENT_LABEL" description="COM_CJFIT_FIELD_AVATAR_COMPONENT_DESC">
+			<option value="none">None</option>
+			<option value="cjforum">CjForum</option>
+			<option value="cjblog">CjBlog</option>
+			<option value="jomsocial">JomSocial</option>
+			<option value="easysocial">EasySocial</option>
+			<option value="easyprofile">EasyProfile</option>
+			<option value="cb">Community Builder</option>
+			<option value="kunena">Kunena</option>
+			<option value="aup">Alpha User Points</option>
+			<option value="atup">Alta User Points</option>
+			<option value="gravatar">Gravatar</option>
+		</field>
+		<field name="points_component" type="list" class="btn-group" default="cjforum" label="COM_CJFIT_FIELD_POINTS_COMPONENT_LABEL" description="COM_CJFIT_FIELD_POINTS_COMPONENT_DESC">
+			<option value="none">None</option>
+			<option value="cjforum">CjForum</option>
+			<option value="cjblog">CjBlog</option>
+			<option value="jomsocial">JomSocial</option>
+			<option value="easysocial">EasySocial</option>
+			<option value="aup">Alpha User Points</option>
+			<option value="atup">Alta User Points</option>
+		</field>
+		<field name="stream_component" type="list" class="btn-group" default="cjforum" label="COM_CJFIT_FIELD_STREAM_COMPONENT_LABEL" description="COM_CJFIT_FIELD_STREAM_COMPONENT_DESC">
+			<option value="none">None</option>
+			<option value="cjforum">CjForum</option>
+			<option value="jomsocial">JomSocial</option>
+			<option value="easysocial">EasySocial</option>
+		</field>
+		<field name="display_name" type="list" default="name" label="COM_CJFIT_FIELD_DISPLAY_NAME_LABEL" description="COM_CJFIT_FIELD_DISPLAY_NAME_DESC">
+			<option value="name">COM_CJFIT_OPTION_NAME</option>
+			<option value="username">COM_CJFIT_OPTION_USERNAME</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" validate="rules" filter="rules" component="com_cjfit" section="component" />
+	</fieldset>
+</config>

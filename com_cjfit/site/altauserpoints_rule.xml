@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<altauserpoints>
+	<component>com_cjfit</component>
+	<rules>
+		<rule>
+			<name>CjFit - Steps Goal</name>
+			<description>Points awarded for reaching steps goal.</description>
+			<plugin_function>com_cjfit.steps_goal</plugin_function>
+			<fixed_points>true</fixed_points>
+			<category>co</category>
+			<display_message>1</display_message>
+			<email_notification>1</email_notification>
+		</rule>
+		<rule>
+			<name>CjFit - Distance Goal</name>
+			<description>Points awarded for reaching distance goal.</description>
+			<plugin_function>com_cjfit.distance_goal</plugin_function>
+			<fixed_points>true</fixed_points>
+			<category>co</category>
+			<display_message>1</display_message>
+			<email_notification>1</email_notification>
+		</rule>
+		<rule>
+			<name>CjFit - Calories Goal</name>
+			<description>Points awarded for reaching calories goal.</description>
+			<plugin_function>com_cjfit.calories_goal</plugin_function>
+			<fixed_points>true</fixed_points>
+			<category>co</category>
+			<display_message>1</display_message>
+			<email_notification>1</email_notification>
+		</rule>
+		<rule>
+			<name>CjFit - Active Minutes Goal</name>
+			<description>Points awarded for reaching active minutes goal.</description>
+			<plugin_function>com_cjfit.active_minutes_goal</plugin_function>
+			<fixed_points>true</fixed_points>
+			<category>co</category>
+			<display_message>1</display_message>
+			<email_notification>1</email_notification>
+		</rule>
+		<rule>
+			<name>CjFit - Challenge</name>
+			<description>Points awarded for winning the challenge.</description>
+			<plugin_function>com_cjfit.challenge</plugin_function>
+			<fixed_points>true</fixed_points>
+			<category>co</category>
+			<display_message>1</display_message>
+			<email_notification>1</email_notification>
+		</rule>
+	</rules>
+</altauserpoints>
